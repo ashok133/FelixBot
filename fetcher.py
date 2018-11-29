@@ -1,19 +1,33 @@
-from flask import Flask
+from flask import Flask, request, make_response
 import urllib.request, json
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return "Hello Flask!"
 
-@app.route("/fetchData")
-def fetchData():
+@app.route("/webhook", methods=['POST'])
+def webhook():
     # return "Fetching data..."
-    with urllib.request.urlopen("http://ec2-13-233-94-247.ap-south-1.compute.amazonaws.com/api/client.php") as url:
-        data = json.loads(url.read().decode())
-        print(data)
-    return ""
+    req = request.get_json(silent=True, force=True)
+    print("Request received: ")
+    req2 = json.dumps(req, indent = 4)
+    # print(req['queryResult']['intent']['name'])
+    if (req['queryResult']['intent']['displayName'] == 'CumminsClients'):
+        res = fetchData()
+        res = json.dumps(res, indent=4)
+        # print(res)
+        r = make_response(res)
+        r.headers['Content-Type'] = 'application/json'
+        return r
+    # return ""
+
+def fetchData():
+    return {
+        "fulfillmentText": "I can't disclose my clients"
+        # "displayText": "hello user"
+    }
 
 if __name__ == "__main__":
     app.run()

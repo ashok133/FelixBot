@@ -1,0 +1,9 @@
+Dear ${PERSON_NAME}, 
+
+At Cummins, we strive to provide our customers with an effortless experience when they buy our engines. Thank you for keeping faith in us. 
+
+While we're not perfect, we're trying our level best to stand by what we preach. We recently identified and validated a defect in our X15 engines (2017 models) currently used in your vehicles. We have initiated mitigation measures, and would request you to hold your horses, until our field technicians come and take back the engines for pressure valve replacements. 
+
+Once again, thanks for keeping faith in us.
+
+

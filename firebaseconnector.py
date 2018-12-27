@@ -1,15 +1,5 @@
 # firebaseconnector
-# '''
-# config details
-#
-#     apiKey: "AIzaSyBAfbolzf2jdauPwuSUxQ9pkPe0HbinYb8",
-#     authDomain: "cumminsinc-224004.firebaseapp.com",
-#     databaseURL: "https://cumminsinc-224004.firebaseio.com",
-#     projectId: "cumminsinc-224004",
-#     storageBucket: "cumminsinc-224004.appspot.com",
-#     messagingSenderId: "641815301596"
-#
-# '''
+
 
 '''
 Sample data instances

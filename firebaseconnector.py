@@ -54,7 +54,7 @@ def fetchVitalStats():
     return readLast('faultLog')
 
 config = {
-  "apiKey": "AIzaSyBAfbolzf2jdauPwuSUxQ9pkPe0HbinYb8",
+  "apiKey": "###",
   "authDomain": "cumminsinc-224004.firebaseapp.com",
   "databaseURL": "https://cumminsinc-224004.firebaseio.com",
   "storageBucket": "cumminsinc-224004.appspot.com",
